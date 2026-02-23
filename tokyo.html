@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Tokyo - Blend ancient traditions with cutting-edge technology in this mesmerizing metropolis">
+    <title>Tokyo - BudgetAsia Travel</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80"
+            alt="Asian travel background"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-pink-50 to-rose-50 overflow-hidden">
+            <div class="container mx-auto px-8 py-32">
+                <div class="max-w-4xl">
+                    <p class="text-sm text-pink-700 font-medium mb-4 uppercase tracking-wider">Japan</p>
+                    <h1 class="text-6xl font-light text-zinc-900 mb-6 tracking-tight leading-tight">
+                        Tokyo
+                    </h1>
+                    <p class="text-xl text-zinc-700 leading-relaxed mb-8 max-w-2xl">
+                        A mesmerizing metropolis where ancient traditions seamlessly blend with cutting-edge technology, neon lights illuminate serene shrines, and every corner reveals a new discovery.
+                    </p>
+                    <a href="booking.html" class="inline-block bg-emerald-700 text-white px-8 py-3.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Plan Your Trip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight">Why Tokyo?</h2>
+                <div class="space-y-4 text-zinc-700 leading-relaxed">
+                    <p>
+                        Tokyo is a city of endless fascination, where tradition and innovation coexist in perfect harmony. From the tranquil gardens of the Imperial Palace to the electric energy of Shibuya Crossing, every neighborhood tells a different story.
+                    </p>
+                    <p>
+                        Despite its reputation as an expensive city, Tokyo offers numerous budget-friendly options. Affordable conveyor belt sushi restaurants, free temple visits, and an efficient public transportation system make it possible to experience this incredible city without overspending. The city's safety, cleanliness, and exceptional service ensure a stress-free travel experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-16 tracking-tight text-center">Top Attractions</h2>
+
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Attraction 1 -->
+                    <article class="group">
+                        <div class="bg-pink-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-pink-200 to-rose-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Senso-ji Temple</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Tokyo's oldest temple in Asakusa, featuring the iconic Thunder Gate and bustling Nakamise shopping street.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 2 -->
+                    <article class="group">
+                        <div class="bg-pink-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-rose-200 to-pink-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Shibuya Crossing</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Experience the world's busiest pedestrian crossing, where thousands navigate in perfect organized chaos.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 3 -->
+                    <article class="group">
+                        <div class="bg-pink-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-fuchsia-200 to-pink-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Meiji Shrine</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            A tranquil Shinto shrine surrounded by lush forest, offering peaceful respite from the urban energy.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight text-center">Must-Try Japanese Cuisine</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Tokyo's food scene ranges from Michelin-starred restaurants to humble ramen shops. Discover authentic flavors that won't empty your wallet.
+                </p>
+
+                <div class="grid grid-cols-4 gap-6">
+
+                    <!-- Food Item 1 -->
+                    <article>
+                        <div class="bg-pink-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-pink-200 to-rose-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Ramen</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Rich noodle soup with various broths, topped with pork, egg, and vegetables.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 2 -->
+                    <article>
+                        <div class="bg-pink-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-rose-200 to-pink-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Sushi</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Fresh fish on vinegared rice, best enjoyed at conveyor belt restaurants for budget travelers.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 3 -->
+                    <article>
+                        <div class="bg-pink-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-fuchsia-200 to-pink-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Takoyaki</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Savory octopus-filled batter balls topped with sauce, mayo, and bonito flakes.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 4 -->
+                    <article>
+                        <div class="bg-pink-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-pink-200 to-red-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Tonkatsu</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Breaded and deep-fried pork cutlet served with shredded cabbage and savory sauce.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-pink-50/50 backdrop-blur-sm">
+            <div class="container mx-auto px-8 py-24">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-light text-zinc-900 mb-12 tracking-tight">Travel Tips</h2>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Best Time to Visit</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Spring (March-May) for cherry blossoms or autumn (September-November) for fall foliage. Summer can be hot and humid, winter is cold but less crowded.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Budget Tips</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Purchase a JR Pass if traveling beyond Tokyo. Convenience stores offer quality meals at low prices. Many museums offer free admission days.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Cultural Etiquette</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Bow when greeting. Remove shoes in traditional spaces. Keep voices low on trains. Cash is still widely used, so carry yen.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Getting Around</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                The subway system is extensive and efficient. Get a Suica or Pasmo card for seamless travel. Google Maps works perfectly for navigation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white/95 backdrop-blur-sm border-t border-gray-200">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-zinc-900 mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm text-zinc-600 leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="text-zinc-500 inline">Student:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">NUID:</dt>
+                            <dd class="text-zinc-900 inline ml-2">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Course:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Institution:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-xs text-zinc-500 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</body>
+</html>
