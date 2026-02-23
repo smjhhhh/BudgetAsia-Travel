@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Bangkok - Experience bustling markets, golden temples, and vibrant street food culture">
+    <title>Bangkok - BudgetAsia Travel</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80"
+            alt="Asian travel background"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
+            <div class="container mx-auto px-8 py-32">
+                <div class="max-w-4xl">
+                    <p class="text-sm text-amber-700 font-medium mb-4 uppercase tracking-wider">Thailand</p>
+                    <h1 class="text-6xl font-light text-zinc-900 mb-6 tracking-tight leading-tight">
+                        Bangkok
+                    </h1>
+                    <p class="text-xl text-zinc-700 leading-relaxed mb-8 max-w-2xl">
+                        Experience the vibrant chaos of Thailand's capital, where ancient temples meet modern skyscrapers, and street food vendors serve up culinary masterpieces.
+                    </p>
+                    <a href="booking.html" class="inline-block bg-emerald-700 text-white px-8 py-3.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Plan Your Trip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight">Why Bangkok?</h2>
+                <div class="space-y-4 text-zinc-700 leading-relaxed">
+                    <p>
+                        Bangkok is a city of contrasts, where centuries-old temples stand alongside gleaming shopping malls, and tuk-tuks navigate bustling streets filled with street food vendors. The city's energy is infectious, offering budget travelers an unforgettable experience without breaking the bank.
+                    </p>
+                    <p>
+                        From the ornate Grand Palace to the floating markets of Damnoen Saduak, Bangkok offers a perfect blend of cultural immersion and modern convenience. The city's affordable accommodation, world-famous street food, and excellent public transportation make it an ideal destination for budget-conscious travelers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-16 tracking-tight text-center">Top Attractions</h2>
+
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Attraction 1 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-amber-200 to-orange-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Grand Palace</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Marvel at the intricate architecture and sacred Emerald Buddha at this iconic royal residence.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 2 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-orange-200 to-amber-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Chatuchak Market</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Explore one of the world's largest weekend markets with over 15,000 stalls selling everything imaginable.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 3 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-yellow-200 to-orange-300 group-hover:scale-105 transition-transform duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Wat Arun</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Visit the stunning Temple of Dawn, famous for its towering spire decorated with colorful porcelain.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight text-center">Must-Try Street Food</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Bangkok's street food scene is legendary. From bustling night markets to roadside stalls, discover authentic flavors at unbeatable prices.
+                </p>
+
+                <div class="grid grid-cols-4 gap-6">
+
+                    <!-- Food Item 1 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-orange-200 to-amber-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Pad Thai</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Stir-fried rice noodles with eggs, tofu, and tamarind sauce.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 2 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-red-200 to-orange-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Som Tam</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Spicy green papaya salad with peanuts and lime.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 3 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-amber-200 to-yellow-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Mango Sticky Rice</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Sweet coconut sticky rice topped with fresh mango.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 4 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-orange-200 to-red-300"></div>
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Tom Yum Goong</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Hot and sour soup with shrimp, lemongrass, and galangal.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-amber-50/50 backdrop-blur-sm">
+            <div class="container mx-auto px-8 py-24">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-light text-zinc-900 mb-12 tracking-tight">Travel Tips</h2>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Best Time to Visit</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                November to February offers the most pleasant weather with cooler temperatures and less humidity. Avoid the hot season (March-May) if possible.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Budget Tips</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Street food is delicious and incredibly affordable. Use the BTS Skytrain and MRT for efficient, budget-friendly transportation around the city.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Cultural Etiquette</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Dress modestly when visiting temples. Remove shoes before entering homes and sacred spaces. The Royal Family is deeply respected.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Getting Around</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Download the Grab app for safe, affordable rides. The BTS and MRT are clean, air-conditioned, and cover most tourist areas efficiently.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white/95 backdrop-blur-sm border-t border-gray-200">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-zinc-900 mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm text-zinc-600 leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="text-zinc-500 inline">Student:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">NUID:</dt>
+                            <dd class="text-zinc-900 inline ml-2">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Course:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Institution:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-xs text-zinc-500 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</body>
+</html>
