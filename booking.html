@@ -251,6 +251,7 @@
         const receipt = document.getElementById('receipt-container');
 
         myForm.addEventListener('submit', function(event) {
+            // Prevent default and render receipt
             event.preventDefault();
 
             const nameValue = document.getElementById('user-name').value;
