@@ -90,202 +90,83 @@
 
         <!-- Booking Form Section -->
         <section class="container mx-auto px-8 pb-24">
-            <div class="max-w-3xl mx-auto">
+            <div class="max-w-2xl mx-auto">
 
                 <!-- Form Card -->
-                <div class="bg-white/95 backdrop-blur-sm border border-gray-200 shadow-lg p-10 md:p-12">
+                <div class="bg-white border border-gray-200 shadow-lg p-8">
 
-                    <form id="bookingForm" class="space-y-8" novalidate>
+                    <form id="trip-form" class="space-y-6">
 
-                        <!-- Personal Information -->
-                        <div class="space-y-6">
-                            <h2 class="text-2xl font-light text-zinc-900 border-b border-gray-200 pb-3">Personal Information</h2>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <!-- Full Name -->
-                                <div>
-                                    <label for="fullName" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Full Name <span class="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="fullName"
-                                        name="fullName"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                        placeholder="John Doe"
-                                    />
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="fullNameError">Please enter your full name</p>
-                                </div>
-
-                                <!-- Email -->
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Email Address <span class="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                        placeholder="john@example.com"
-                                    />
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="emailError">Please enter a valid email</p>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <!-- Phone -->
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Phone Number <span class="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                        placeholder="+1 (555) 123-4567"
-                                    />
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="phoneError">Please enter your phone number</p>
-                                </div>
-
-                                <!-- Number of Travelers -->
-                                <div>
-                                    <label for="travelers" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Number of Travelers <span class="text-red-500">*</span>
-                                    </label>
-                                    <select
-                                        id="travelers"
-                                        name="travelers"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                    >
-                                        <option value="">Select...</option>
-                                        <option value="1">1 Person</option>
-                                        <option value="2">2 People</option>
-                                        <option value="3">3 People</option>
-                                        <option value="4">4 People</option>
-                                        <option value="5+">5+ People</option>
-                                    </select>
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="ravelersError">Please select number of travelers</p>
-                                </div>
-                            </div>
+                        <!-- Name -->
+                        <div>
+                            <label for="user-name" class="block text-sm font-medium text-zinc-700 mb-2">
+                                Your Name <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="user-name"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:outline-none text-zinc-900"
+                                placeholder="John Doe"
+                            />
                         </div>
 
-                        <!-- Trip Details -->
-                        <div class="space-y-6">
-                            <h2 class="text-2xl font-light text-zinc-900 border-b border-gray-200 pb-3">Trip Details</h2>
+                        <!-- Number of Travelers -->
+                        <div>
+                            <label for="travelers" class="block text-sm font-medium text-zinc-700 mb-2">
+                                Number of Travelers <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="travelers"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:outline-none text-zinc-900"
+                            >
+                                <option value="">Select...</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <!-- Destination -->
-                                <div>
-                                    <label for="destination" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Destination <span class="text-red-500">*</span>
-                                    </label>
-                                    <select
-                                        id="destination"
-                                        name="destination"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                    >
-                                        <option value="">Select destination...</option>
-                                        <option value="Bangkok">Bangkok, Thailand</option>
-                                        <option value="Tokyo">Tokyo, Japan</option>
-                                        <option value="Seoul">Seoul, South Korea</option>
-                                        <option value="Hong Kong">Hong Kong</option>
-                                        <option value="Multi-City">Multi-City Tour</option>
-                                    </select>
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="destinationError">Please select a destination</p>
-                                </div>
+                        <!-- Departure Date -->
+                        <div>
+                            <label for="departure-date" class="block text-sm font-medium text-zinc-700 mb-2">
+                                Departure Date <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="date"
+                                id="departure-date"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:outline-none text-zinc-900"
+                            />
+                        </div>
 
-                                <!-- Package Type -->
-                                <div>
-                                    <label for="package" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Package Type <span class="text-red-500">*</span>
-                                    </label>
-                                    <select
-                                        id="package"
-                                        name="package"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                    >
-                                        <option value="">Select package...</option>
-                                        <option value="Budget Explorer">Budget Explorer ($599)</option>
-                                        <option value="Cultural Immersion">Cultural Immersion ($899)</option>
-                                        <option value="Luxury Comfort">Luxury Comfort ($1,499)</option>
-                                        <option value="Custom Package">Custom Package</option>
-                                    </select>
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="packageError">Please select a package</p>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <!-- Departure Date -->
-                                <div>
-                                    <label for="departureDate" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Departure Date <span class="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="date"
-                                        id="departureDate"
-                                        name="departureDate"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                    />
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="departureDateError">Please select a departure date</p>
-                                </div>
-
-                                <!-- Duration -->
-                                <div>
-                                    <label for="duration" class="block text-sm font-medium text-zinc-700 mb-2">
-                                        Trip Duration <span class="text-red-500">*</span>
-                                    </label>
-                                    <select
-                                        id="duration"
-                                        name="duration"
-                                        required
-                                        class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900"
-                                    >
-                                        <option value="">Select duration...</option>
-                                        <option value="3-5 days">3-5 Days</option>
-                                        <option value="6-8 days">6-8 Days</option>
-                                        <option value="9-12 days">9-12 Days</option>
-                                        <option value="13+ days">13+ Days</option>
-                                    </select>
-                                    <p class="text-xs text-red-500 mt-1 hidden" id="durationError">Please select trip duration</p>
-                                </div>
-                            </div>
-
-                            <!-- Special Requests -->
-                            <div>
-                                <label for="specialRequests" class="block text-sm font-medium text-zinc-700 mb-2">
-                                    Special Requests or Dietary Requirements
-                                </label>
-                                <textarea
-                                    id="specialRequests"
-                                    name="specialRequests"
-                                    rows="4"
-                                    class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/20 outline-none transition-all duration-200 text-zinc-900 resize-none"
-                                    placeholder="Let us know about any special requirements, dietary restrictions, or preferences..."
-                                ></textarea>
-                            </div>
+                        <!-- Package -->
+                        <div>
+                            <label for="package-select" class="block text-sm font-medium text-zinc-700 mb-2">
+                                Package Type <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="package-select"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 focus:border-emerald-700 focus:outline-none text-zinc-900"
+                            >
+                                <option value="">Select package...</option>
+                                <option value="Budget Explorer ($599)">Budget Explorer ($599)</option>
+                                <option value="Cultural Immersion ($899)">Cultural Immersion ($899)</option>
+                                <option value="Luxury Comfort ($1,499)">Luxury Comfort ($1,499)</option>
+                            </select>
                         </div>
 
                         <!-- Submit Button -->
-                        <div class="flex items-center justify-between pt-6 border-t border-gray-200">
-                            <p class="text-xs text-zinc-500">
-                                <span class="text-red-500">*</span> Required fields
-                            </p>
-                            <button
-                                type="submit"
-                                class="bg-emerald-700 text-white px-10 py-4 text-sm font-medium hover:bg-emerald-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                            >
-                                Submit Booking Request
-                            </button>
-                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-emerald-700 text-white px-6 py-3 text-sm font-medium hover:bg-emerald-800 transition-colors"
+                        >
+                            Confirm Booking
+                        </button>
 
                     </form>
 
@@ -295,51 +176,11 @@
         </section>
 
         <!-- Confirmation Receipt Section (Hidden by default) -->
-        <section id="confirmationSection" class="container mx-auto px-8 pb-24 hidden">
-            <div class="max-w-3xl mx-auto">
-
-                <!-- Success Message -->
-                <div class="bg-emerald-50 border-l-4 border-emerald-700 p-6 mb-8 animate-fade-in">
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-emerald-700 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div>
-                            <h3 class="text-lg font-medium text-emerald-900 mb-1">Booking Request Received!</h3>
-                            <p class="text-sm text-emerald-800">Thank you for choosing BudgetAsia Travel. We've received your booking request and will contact you within 24 hours.</p>
-                        </div>
-                    </div>
+        <section id="receipt-container" class="container mx-auto px-8 pb-24 hidden">
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-emerald-50 border border-emerald-700 p-8">
+                    <!-- Receipt will be dynamically generated here -->
                 </div>
-
-                <!-- Receipt Card -->
-                <div class="bg-white border-2 border-emerald-700 shadow-xl p-10 animate-slide-up">
-                    <div class="border-b border-gray-200 pb-6 mb-6">
-                        <h2 class="text-3xl font-light text-zinc-900 mb-2">Booking Confirmation</h2>
-                        <p class="text-sm text-zinc-500">Confirmation #: <span id="confirmationNumber" class="font-mono text-emerald-700"></span></p>
-                    </div>
-
-                    <!-- Receipt Details -->
-                    <div id="receiptDetails" class="space-y-6">
-                        <!-- Details will be injected here via JavaScript -->
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="flex gap-4 pt-8 border-t border-gray-200 mt-8">
-                        <button
-                            onclick="window.print()"
-                            class="flex-1 bg-white border border-gray-300 text-zinc-900 px-6 py-3 text-sm font-medium hover:border-emerald-700 hover:text-emerald-700 transition-colors duration-200"
-                        >
-                            Print Receipt
-                        </button>
-                        <button
-                            onclick="location.href='index.html'"
-                            class="flex-1 bg-emerald-700 text-white px-6 py-3 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200"
-                        >
-                            Return to Home
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -406,252 +247,30 @@
 
     <!-- Vanilla JavaScript for Form Handling -->
     <script>
-        // Form handling with validation and dynamic DOM manipulation
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('bookingForm');
-            const confirmationSection = document.getElementById('confirmationSection');
+        const myForm = document.getElementById('trip-form');
+        const receipt = document.getElementById('receipt-container');
 
-            // Form field IDs for validation
-            const requiredFields = [
-                'fullName', 'email', 'phone', 'travelers',
-                'destination', 'package', 'departureDate', 'duration'
-            ];
+        myForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-            // Email validation regex
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const nameValue = document.getElementById('user-name').value;
+            const travelersValue = document.getElementById('travelers').value;
+            const dateValue = document.getElementById('departure-date').value;
+            const packageValue = document.getElementById('package-select').value;
 
-            // Form submission handler
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent page refresh
+            receipt.querySelector('div').innerHTML = `
+                <h2 class="text-2xl font-bold text-emerald-900 mb-4">Booking Confirmed!</h2>
+                <p class="text-zinc-700 mb-2">Passenger: <strong>${nameValue}</strong></p>
+                <p class="text-zinc-700 mb-2">Travelers: <strong>${travelersValue}</strong></p>
+                <p class="text-zinc-700 mb-2">Date: <strong>${dateValue}</strong></p>
+                <p class="text-zinc-700 mb-2">Package: <strong>${packageValue}</strong></p>
+                <p class="text-zinc-700 mt-4">Reference: <strong>#BA${Math.floor(Math.random() * 10000)}</strong></p>
+            `;
 
-                // Reset previous error states
-                clearErrors();
-
-                // Validate all fields
-                let isValid = true;
-                const formData = {};
-
-                requiredFields.forEach(fieldId => {
-                    const field = document.getElementById(fieldId);
-                    const value = field.value.trim();
-
-                    if (value === '') {
-                        showError(fieldId);
-                        isValid = false;
-                    } else {
-                        // Special validation for email
-                        if (fieldId === 'email' && !emailRegex.test(value)) {
-                            showError(fieldId, 'Please enter a valid email address');
-                            isValid = false;
-                        } else {
-                            formData[fieldId] = value;
-                        }
-                    }
-                });
-
-                // Add optional special requests
-                formData.specialRequests = document.getElementById('specialRequests').value.trim();
-
-                // If validation passes, generate confirmation
-                if (isValid) {
-                    generateConfirmation(formData);
-
-                    // Smooth scroll to confirmation
-                    setTimeout(() => {
-                        confirmationSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }, 300);
-                } else {
-                    // Scroll to first error
-                    const firstError = document.querySelector('.border-red-500');
-                    if (firstError) {
-                        firstError.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'center'
-                        });
-                    }
-                }
-            });
-
-            // Show error function
-            function showError(fieldId, customMessage = null) {
-                const field = document.getElementById(fieldId);
-                const errorMessage = document.getElementById(fieldId + 'Error');
-
-                field.classList.add('border-red-500', 'border-2');
-                field.classList.remove('border-gray-300');
-
-                if (errorMessage) {
-                    if (customMessage) {
-                        errorMessage.textContent = customMessage;
-                    }
-                    errorMessage.classList.remove('hidden');
-                }
-            }
-
-            // Clear all errors
-            function clearErrors() {
-                requiredFields.forEach(fieldId => {
-                    const field = document.getElementById(fieldId);
-                    const errorMessage = document.getElementById(fieldId + 'Error');
-
-                    field.classList.remove('border-red-500', 'border-2');
-                    field.classList.add('border-gray-300');
-
-                    if (errorMessage) {
-                        errorMessage.classList.add('hidden');
-                    }
-                });
-            }
-
-            // Generate confirmation receipt with DOM manipulation
-            function generateConfirmation(data) {
-                // Generate random confirmation number
-                const confirmationNum = 'BA' + Date.now().toString().slice(-8);
-                document.getElementById('confirmationNumber').textContent = confirmationNum;
-
-                // Create receipt HTML structure
-                const receiptHTML = `
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <h3 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Traveler Name</h3>
-                            <p class="text-base text-zinc-900">${escapeHtml(data.fullName)}</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Email</h3>
-                            <p class="text-base text-zinc-900">${escapeHtml(data.email)}</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Phone</h3>
-                            <p class="text-base text-zinc-900">${escapeHtml(data.phone)}</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Number of Travelers</h3>
-                            <p class="text-base text-zinc-900">${escapeHtml(data.travelers)}</p>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-gray-200 pt-6 mt-6">
-                        <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Trip Details</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Destination</h4>
-                                <p class="text-base text-zinc-900">${escapeHtml(data.destination)}</p>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Package Type</h4>
-                                <p class="text-base text-zinc-900">${escapeHtml(data.package)}</p>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Departure Date</h4>
-                                <p class="text-base text-zinc-900">${formatDate(data.departureDate)}</p>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Duration</h4>
-                                <p class="text-base text-zinc-900">${escapeHtml(data.duration)}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    ${data.specialRequests ? `
-                        <div class="border-t border-gray-200 pt-6 mt-6">
-                            <h3 class="text-sm font-medium text-zinc-900 mb-3 uppercase tracking-wider">Special Requests</h3>
-                            <p class="text-sm text-zinc-700 leading-relaxed bg-gray-50 p-4">${escapeHtml(data.specialRequests)}</p>
-                        </div>
-                    ` : ''}
-
-                    <div class="bg-emerald-50 border border-emerald-200 p-6 mt-6">
-                        <h3 class="text-sm font-medium text-emerald-900 mb-2 uppercase tracking-wider">Next Steps</h3>
-                        <ul class="text-sm text-emerald-800 space-y-2">
-                            <li class="flex items-start">
-                                <span class="text-emerald-700 mr-2">•</span>
-                                <span>You will receive a confirmation email at <strong>${escapeHtml(data.email)}</strong> within 5 minutes</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-emerald-700 mr-2">•</span>
-                                <span>Our travel specialist will contact you within 24 hours to finalize your booking</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-emerald-700 mr-2">•</span>
-                                <span>Keep your confirmation number (<strong>${confirmationNum}</strong>) for reference</span>
-                            </li>
-                        </ul>
-                    </div>
-                `;
-
-                // Inject receipt into DOM
-                document.getElementById('receiptDetails').innerHTML = receiptHTML;
-
-                // Show confirmation section with fade-in animation
-                confirmationSection.classList.remove('hidden');
-
-                // Hide the form
-                form.parentElement.style.display = 'none';
-            }
-
-            // Utility function to escape HTML and prevent XSS
-            function escapeHtml(text) {
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            }
-
-            // Format date for better display
-            function formatDate(dateString) {
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const date = new Date(dateString);
-                return date.toLocaleDateString('en-US', options);
-            }
-
-            // Real-time validation on input
-            requiredFields.forEach(fieldId => {
-                const field = document.getElementById(fieldId);
-                field.addEventListener('blur', function() {
-                    if (this.value.trim() === '') {
-                        showError(fieldId);
-                    } else {
-                        const errorMessage = document.getElementById(fieldId + 'Error');
-                        this.classList.remove('border-red-500', 'border-2');
-                        this.classList.add('border-gray-300');
-                        if (errorMessage) errorMessage.classList.add('hidden');
-                    }
-                });
-            });
+            receipt.classList.remove('hidden');
+            myForm.parentElement.classList.add('hidden');
         });
     </script>
-
-    <!-- Custom CSS for animations -->
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        .animate-slide-up {
-            animation: slideUp 0.6s ease-out;
-        }
-    </style>
 
 </body>
 </html>
