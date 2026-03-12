@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BudgetAsia Travel - Affordable travel experiences across Bangkok, Tokyo, and Seoul">
+    <title>BudgetAsia Travel - Explore Asia on a Budget</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Global layout established with consistent navigation and footer -->
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=1920&q=80"
+            alt="Asian travel destinations"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                            <a href="hongkong.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Hong Kong</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto px-8 py-48">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-7xl font-light text-zinc-900 mb-8 tracking-tight leading-tight">
+                    Explore Asia on a Budget
+                </h1>
+                <p class="text-xl text-zinc-700 leading-relaxed mb-12 max-w-2xl mx-auto">
+                    Discover curated travel experiences across Bangkok, Tokyo, and Seoul without breaking the bank.
+                </p>
+                <div class="flex gap-4 justify-center items-center">
+                    <a href="packages.html" class="bg-emerald-700 text-white px-8 py-3.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200 shadow-sm">
+                        Explore Destinations
+                    </a>
+                    <a href="booking.html" class="bg-white border border-zinc-300 text-zinc-900 px-8 py-3.5 text-sm font-medium hover:border-emerald-700 hover:text-emerald-700 transition-colors duration-200 shadow-sm">
+                        Book Your Trip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="container mx-auto px-8 py-24 bg-white/50">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Section Header -->
+                <div class="mb-16 text-center">
+                    <h2 class="text-4xl font-light text-zinc-900 mb-4 tracking-tight">
+                        Why Choose BudgetAsia?
+                    </h2>
+                    <p class="text-zinc-600 max-w-2xl mx-auto">
+                        We make exploring Asia affordable, memorable, and worry-free with our curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Reasons Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Reason 1: Best Value -->
+                    <div class="text-center p-8 group hover:bg-white transition-colors duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-700 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-emerald-700 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-3">Best Value Pricing</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Competitive rates without compromising quality. We negotiate the best deals so you don't have to.
+                        </p>
+                    </div>
+
+                    <!-- Reason 2: Expert Planning -->
+                    <div class="text-center p-8 group hover:bg-white transition-colors duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-700 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-emerald-700 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-3">Expert Itineraries</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Carefully crafted multi-day plans by travel experts who know Asia inside and out.
+                        </p>
+                    </div>
+
+                    <!-- Reason 3: 24/7 Support -->
+                    <div class="text-center p-8 group hover:bg-white transition-colors duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-700 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-emerald-700 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-3">24/7 Support</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Round-the-clock assistance before, during, and after your trip. We're always here to help.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-5xl mx-auto">
+
+                <!-- Promotional Banner -->
+                <div class="bg-gradient-to-r from-emerald-700 to-emerald-600 p-12 text-center mb-12">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 mb-4">
+                        <span class="text-white text-xs font-medium uppercase tracking-widest">Limited Time Offer</span>
+                    </div>
+                    <h2 class="text-4xl font-light text-white mb-4 tracking-tight">
+                        Save Up to 30% on Select Packages
+                    </h2>
+                    <p class="text-emerald-50 text-lg mb-6 max-w-2xl mx-auto">
+                        Book your Asian adventure before March 31st and enjoy exclusive early-bird discounts on our most popular destinations.
+                    </p>
+                    <div class="flex gap-4 justify-center items-center">
+                        <a href="packages.html" class="bg-white text-emerald-700 px-8 py-3 text-sm font-medium hover:bg-emerald-50 transition-colors duration-200">
+                            View Deals
+                        </a>
+                        <span class="text-white text-sm">
+                            Use code: <span class="font-bold bg-white/20 px-3 py-1">ASIA30</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Discount Details -->
+                <div class="grid grid-cols-3 gap-6">
+
+                    <div class="bg-white border border-emerald-200 p-6 text-center">
+                        <div class="text-3xl font-light text-emerald-700 mb-2">20% OFF</div>
+                        <p class="text-sm text-zinc-600 mb-2 font-medium">Budget Explorer</p>
+                        <p class="text-xs text-zinc-500">Was $599 → <span class="font-bold text-emerald-700">Now $479</span></p>
+                    </div>
+
+                    <div class="bg-white border border-emerald-200 p-6 text-center">
+                        <div class="text-3xl font-light text-emerald-700 mb-2">25% OFF</div>
+                        <p class="text-sm text-zinc-600 mb-2 font-medium">Cultural Immersion</p>
+                        <p class="text-xs text-zinc-500">Was $899 → <span class="font-bold text-emerald-700">Now $674</span></p>
+                    </div>
+
+                    <div class="bg-white border border-emerald-200 p-6 text-center">
+                        <div class="text-3xl font-light text-emerald-700 mb-2">30% OFF</div>
+                        <p class="text-sm text-zinc-600 mb-2 font-medium">Luxury Comfort</p>
+                        <p class="text-xs text-zinc-500">Was $1,499 → <span class="font-bold text-emerald-700">Now $1,049</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Destinations Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Section Header -->
+                <div class="mb-16 text-center">
+                    <h2 class="text-4xl font-light text-zinc-900 mb-4 tracking-tight">
+                        Featured Destinations
+                    </h2>
+                    <p class="text-zinc-600 max-w-2xl mx-auto">
+                        Immerse yourself in vibrant cultures, stunning landscapes, and unforgettable experiences.
+                    </p>
+                </div>
+
+                <!-- Destination Cards -->
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Bangkok Card -->
+                    <article class="group cursor-pointer">
+                        <a href="bangkok.html" class="block">
+                            <div class="bg-amber-100 h-80 mb-6 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&q=80" alt="Bangkok Cityscape" class="w-full h-full object-cover" />
+                            </div>
+                            <h3 class="text-2xl font-light text-zinc-900 mb-2 group-hover:text-emerald-700 transition-colors duration-200">
+                                Bangkok
+                            </h3>
+                            <p class="text-sm text-zinc-600 mb-4 leading-relaxed">
+                                Experience bustling markets, golden temples, and vibrant street food culture in Thailand's dynamic capital.
+                            </p>
+                            <span class="text-sm text-emerald-700 font-medium inline-flex items-center group-hover:translate-x-2 transition-transform duration-200">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- Tokyo Card -->
+                    <article class="group cursor-pointer">
+                        <a href="tokyo.html" class="block">
+                            <div class="bg-pink-100 h-80 mb-6 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80" alt="Tokyo Cityscape" class="w-full h-full object-cover" />
+                            </div>
+                            <h3 class="text-2xl font-light text-zinc-900 mb-2 group-hover:text-emerald-700 transition-colors duration-200">
+                                Tokyo
+                            </h3>
+                            <p class="text-sm text-zinc-600 mb-4 leading-relaxed">
+                                Blend ancient traditions with cutting-edge technology in this mesmerizing metropolis of endless discovery.
+                            </p>
+                            <span class="text-sm text-emerald-700 font-medium inline-flex items-center group-hover:translate-x-2 transition-transform duration-200">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- Seoul Card -->
+                    <article class="group cursor-pointer">
+                        <a href="seoul.html" class="block">
+                            <div class="bg-blue-100 h-80 mb-6 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800&q=80" alt="Seoul Cityscape" class="w-full h-full object-cover" />
+                            </div>
+                            <h3 class="text-2xl font-light text-zinc-900 mb-2 group-hover:text-emerald-700 transition-colors duration-200">
+                                Seoul
+                            </h3>
+                            <p class="text-sm text-zinc-600 mb-4 leading-relaxed">
+                                Discover K-culture, historic palaces, and trendy neighborhoods in South Korea's captivating capital city.
+                            </p>
+                            <span class="text-sm text-emerald-700 font-medium inline-flex items-center group-hover:translate-x-2 transition-transform duration-200">
+                                Learn More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white/95 backdrop-blur-sm border-t border-gray-200">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-zinc-900 mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm text-zinc-600 leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="text-zinc-500 inline">Student:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">NUID:</dt>
+                            <dd class="text-zinc-900 inline ml-2">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Course:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Institution:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-xs text-zinc-500 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</body>
+</html>
