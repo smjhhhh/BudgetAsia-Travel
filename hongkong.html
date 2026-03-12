@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Hong Kong - Experience neon-lit streets, dim sum culture, and stunning skyline views">
+    <title>Hong Kong - BudgetAsia Travel</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=1920&q=80"
+            alt="Hong Kong Victoria Harbour skyline"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                            <a href="hongkong.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Hong Kong</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BGM Player: 谁明浪子心 -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="bgm-toggle" class="bg-purple-900/80 backdrop-blur-md text-white p-3 rounded-full shadow-[0_0_15px_rgba(168,85,247,0.5)] border border-purple-500/50 hover:scale-110 transition-all duration-300 group flex items-center gap-3">
+            <div id="record-icon" class="w-8 h-8 rounded-full border-2 border-zinc-800 bg-zinc-900 flex items-center justify-center animate-[spin_3s_linear_infinite] [animation-play-state:paused]">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+            </div>
+            <span class="text-xs font-light tracking-widest hidden group-hover:block pr-2">谁明浪子心 BGM</span>
+        </button>
+        <!-- BGM Player: 谁明浪子心 -->
+        <audio id="hk-audio" loop>
+            <source src="assets/langzixin.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section: Classic HK Music Album Collage -->
+        <!-- Special feature: Parallax album wall inspired by Hong Kong's vibrant music culture -->
+        <section class="relative h-screen sticky top-0 overflow-hidden z-0">
+            <!-- Album Cover Grid Background -->
+            <div class="absolute inset-0 grid grid-cols-3 md:grid-cols-4 gap-1 opacity-50 grayscale hover:grayscale-0 transition-all duration-1000">
+                <img src="assets/andylau.jpg" class="w-full h-full object-cover" alt="Andy Lau">
+                <img src="assets/leslie.jpg" class="w-full h-full object-cover" alt="Leslie Cheung">
+                <img src="assets/tonyleung.jpg" class="w-full h-full object-cover" alt="Tony Leung">
+                <img src="assets/chowyunfat.jpg" class="w-full h-full object-cover hidden md:block" alt="Chow Yun Fat">
+                <img src="assets/aaronkwok.jpg" class="w-full h-full object-cover" alt="Aaron Kwok">
+                <img src="assets/jackycheung.jpg" class="w-full h-full object-cover" alt="Jacky Cheung">
+                <img src="assets/leonlai.jpg" class="w-full h-full object-cover hidden md:block" alt="Leon Lai">
+                <img src="assets/danielwu.jpg" class="w-full h-full object-cover" alt="Daniel Wu">
+                <img src="assets/stephenchow.jpg" class="w-full h-full object-cover" alt="Stephen Chow">
+                <img src="assets/nicholastse.jpg" class="w-full h-full object-cover" alt="Nicholas Tse">
+                <img src="assets/leslie.jpg" class="w-full h-full object-cover" alt="Leslie Cheung">
+                <img src="assets/andylau.jpg" class="w-full h-full object-cover" alt="Andy Lau">
+            </div>
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-purple-900/80 z-10"></div>
+
+            <!-- Hero Content -->
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
+                <p class="text-sm md:text-base text-purple-300 font-medium mb-4 uppercase tracking-widest drop-shadow-md">中国香港特别行政区</p>
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight leading-none drop-shadow-[0_0_20px_rgba(168,85,247,0.8)]">
+                    HONG KONG
+                </h1>
+                <p class="text-2xl md:text-4xl font-light italic mb-8 text-pink-300 drop-shadow-md border-y border-pink-500/30 py-4 px-8">"谁明浪子心"</p>
+                <p class="text-sm md:text-lg text-white/90 mb-12 max-w-xl font-light leading-relaxed">
+                    伴随着王杰的歌声，走过弥敦道的霓虹，重温刘德华、郑伊健、吴彦祖的港影流金岁月。
+                </p>
+
+                <button onclick="document.getElementById('bgm-toggle').click()" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full tracking-widest text-sm uppercase transition-all shadow-[0_0_15px_rgba(219,39,119,0.5)] mb-12">
+                    PLAY BGM & EXPLORE
+                </button>
+
+                <!-- Scroll Indicator -->
+                <div class="animate-bounce">
+                    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Parallax Layer: Cinematic City -->
+        <section class="relative h-screen sticky top-0 overflow-hidden z-10 bg-black">
+            <!-- Cinema Poster Grid Background -->
+            <div class="absolute inset-0 grid grid-cols-4 md:grid-cols-4 grid-rows-2 gap-0 opacity-40 sepia">
+                <img src="https://images.unsplash.com/photo-1551622598-c3aa06048a6d?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1551622598-c3aa06048a6d?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=500&fit=crop" class="w-full h-full object-cover" alt="Cinema Poster">
+            </div>
+
+            <!-- Colored Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/60 via-purple-900/50 to-pink-900/60 z-10"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">Cinematic City</h2>
+                <p class="text-lg md:text-2xl max-w-2xl font-light leading-relaxed">
+                    Where every street corner feels like a Wong Kar-wai film scene, painted in neon and nostalgia.
+                </p>
+
+                <!-- Continue Indicator -->
+                <div class="mt-16 animate-pulse">
+                    <p class="text-xs text-white/70">Continue scrolling to explore</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight">Why Hong Kong?</h2>
+                <div class="space-y-4 text-zinc-700 leading-relaxed">
+                    <p>
+                        Hong Kong is a vertical city where ancient traditions thrive amid gleaming skyscrapers. From century-old tea houses in Central to cutting-edge rooftop bars in Lan Kwai Fong, this Special Administrative Region offers an unparalleled blend of British colonial heritage and Cantonese soul.
+                    </p>
+                    <p>
+                        Despite its reputation as a financial hub, Hong Kong surprises budget travelers with affordable street food, free hiking trails with breathtaking views, and an incredibly efficient MTR system. The Octopus card makes navigating the city effortless, while neighborhoods like Sham Shui Po and Mong Kok offer authentic local experiences at unbeatable prices.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-16 tracking-tight text-center">Top Attractions</h2>
+
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Attraction 1 -->
+                    <article class="group">
+                        <div class="bg-purple-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=400&fit=crop" alt="Victoria Peak Hong Kong" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Victoria Peak</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Take the iconic Peak Tram for panoramic views of the harbor, skyscrapers, and surrounding islands.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 2 -->
+                    <article class="group">
+                        <div class="bg-purple-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop" alt="Temple Street Night Market Hong Kong" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Temple Street Night Market</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Experience authentic Hong Kong nightlife with street food, fortune tellers, and bargain shopping under neon lights.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 3 -->
+                    <article class="group">
+                        <div class="bg-purple-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513326040522-f06519603e13?w=600&h=400&fit=crop" alt="Tian Tan Buddha Lantau Island" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Tian Tan Buddha</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Visit the massive bronze Buddha on Lantau Island, accessible via scenic cable car with mountain views.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight text-center">Must-Try Cantonese Cuisine</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Hong Kong is a food paradise where Michelin-starred dim sum restaurants sit next to humble dai pai dongs. Experience authentic Cantonese flavors at every price point.
+                </p>
+
+                <div class="grid grid-cols-4 gap-6">
+
+                    <!-- Food Item 1 -->
+                    <article>
+                        <div class="bg-purple-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1623953059892-d4da4926f432?w=400&h=300&fit=crop" alt="Dim Sum Hong Kong" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Dim Sum</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Steamed dumplings, buns, and pastries served in bamboo baskets at traditional teahouses.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 2 -->
+                    <article>
+                        <div class="bg-purple-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1625867858456-38f1a0f13c77?w=400&h=300&fit=crop" alt="Roast Goose Hong Kong" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Roast Goose</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Crispy-skinned Cantonese roast goose served over rice, a Hong Kong culinary icon.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 3 -->
+                    <article>
+                        <div class="bg-purple-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1587518749887-c37b42ff570d?w=400&h=300&fit=crop" alt="Egg Tart Hong Kong" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Egg Tart</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Flaky pastry filled with silky egg custard, perfect with Hong Kong-style milk tea.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 4 -->
+                    <article>
+                        <div class="bg-purple-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1582878475189-d4de3a1d1df9?w=400&h=300&fit=crop" alt="Wonton Noodles Hong Kong" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Wonton Noodles</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Delicate shrimp wontons in clear broth with springy egg noodles, a local favorite.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Day Itinerary Section -->
+        <section class="container mx-auto px-8 py-24 bg-purple-50/30">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-light text-zinc-900 mb-4 tracking-tight text-center">3-Day Hong Kong Itinerary</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Navigate the vertical city where East meets West, from hilltop temples to neon-soaked streets, with this cinematic 3-day journey.
+                </p>
+
+                <!-- Day 1 -->
+                <article class="bg-white border border-purple-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-purple-200">
+                        <div class="bg-purple-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 1: Island Highlights & Victoria Harbour</h3>
+                            <p class="text-sm text-zinc-500">Peak Views, Central Districts & Harbor Cruises</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Victoria Peak (The Peak)</p>
+                                    <p class="text-sm text-zinc-600">Ride the historic Peak Tram to Hong Kong's highest point for panoramic skyline views. Arrive early (before 10 AM) to avoid crowds.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Central & Sheung Wan Districts</p>
+                                    <p class="text-sm text-zinc-600">Explore the Mid-Levels Escalator (world's longest outdoor covered escalator), visit Man Mo Temple, and browse antique shops on Hollywood Road.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Star Ferry & Tsim Sha Tsui Promenade</p>
+                                    <p class="text-sm text-zinc-600">Take the iconic Star Ferry across Victoria Harbour (HK$3.70!), then watch the Symphony of Lights show at 8 PM from the waterfront.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Hong Kong-style breakfast at a cha chaan teng: macaroni soup, milk tea, pineapple bun (~HK$40)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Dim sum at Lin Heung Tea House in Central (traditional pushcart service, ~HK$80)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Roast goose rice at Yat Lok near Central (~HK$60), followed by egg tarts from Tai Cheong Bakery</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 2 -->
+                <article class="bg-white border border-purple-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-purple-200">
+                        <div class="bg-purple-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 2: Kowloon Markets & Spiritual Escapes</h3>
+                            <p class="text-sm text-zinc-500">Street Markets, Big Buddha & Island Temples</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Ngong Ping 360 & Tian Tan Buddha (Big Buddha)</p>
+                                    <p class="text-sm text-zinc-600">Take the cable car to Lantau Island (25 min ride with mountain views), climb 268 steps to the massive bronze Buddha, explore Po Lin Monastery.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Tai O Fishing Village</p>
+                                    <p class="text-zinc-600">Visit the "Venice of Hong Kong" with traditional stilt houses, dried seafood markets, and boat tours to spot pink dolphins (optional).</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Temple Street Night Market, Kowloon</p>
+                                    <p class="text-sm text-zinc-600">Browse open-air stalls selling electronics, jade, clothes. Watch fortune tellers, Cantonese opera singers, and street performers under red lanterns.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Congee and youtiao (fried dough sticks) before heading to Lantau (~HK$35)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Vegetarian meal at Po Lin Monastery, then shrimp paste and tofu pudding at Tai O (~HK$70)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Claypot rice and wonton noodles at Temple Street food stalls (~HK$65)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 3 -->
+                <article class="bg-white border border-purple-200 p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-purple-200">
+                        <div class="bg-purple-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 3: Local Neighborhoods & Hiking Trails</h3>
+                            <p class="text-sm text-zinc-500">Mong Kok, Dragon's Back & Sunset Spots</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Mong Kok Markets</p>
+                                    <p class="text-sm text-zinc-600">Visit Ladies' Market for bargain shopping, Flower Market Road for colorful blooms, and Goldfish Market for aquarium culture (yes, goldfish in plastic bags!).</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Dragon's Back Trail</p>
+                                    <p class="text-sm text-zinc-600">Hike Hong Kong's #1 urban trail (2-3 hours, moderate difficulty) with stunning coastal views, ending at Shek O Beach for a swim (totally free!).</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Lan Kwai Fong & SoHo</p>
+                                    <p class="text-sm text-zinc-600">Experience Hong Kong's nightlife epicenter with rooftop bars offering harbor views, live music venues, and international restaurants on sloping streets.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Cheung fun (rice noodle rolls) at a dai pai dong in Mong Kok (~HK$25)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Seafood lunch at Shek O after the hike: grilled squid, salt & pepper mantis shrimp (~HK$150)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Michelin-rated dim sum at Tim Ho Wan (budget-friendly!), then drinks at Ozone rooftop bar (~HK$100 + drinks)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Budget Summary -->
+                <div class="bg-emerald-50 border-l-4 border-emerald-700 p-6 mt-8">
+                    <h4 class="text-sm font-medium text-emerald-900 uppercase tracking-wider mb-3">3-Day Budget Estimate</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div>
+                            <p class="text-emerald-700 font-medium">Accommodation</p>
+                            <p class="text-emerald-900">~HK$500/night</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Food</p>
+                            <p class="text-emerald-900">~HK$250/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Transportation</p>
+                            <p class="text-emerald-900">~HK$80/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Attractions</p>
+                            <p class="text-emerald-900">~HK$350 total</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-emerald-800 mt-4"><strong>Total 3-Day Budget:</strong> Approximately HK$2,840 (~$365 USD) per person</p>
+                    <p class="text-xs text-emerald-700 mt-2 italic">💡 Tip: Get an Octopus card (HK$150 deposit) for seamless MTR, tram, ferry, and convenience store payments!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-purple-50/50 backdrop-blur-sm">
+            <div class="container mx-auto px-8 py-24">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-light text-zinc-900 mb-12 tracking-tight">Travel Tips</h2>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Best Time to Visit</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                October to December offers the best weather with comfortable temperatures and low humidity. Avoid typhoon season in summer and peak crowds during Chinese New Year.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Budget Tips</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Get an Octopus card for seamless MTR travel. Eat at local cha chaan tengs for affordable meals. Many hiking trails and temples are free to explore.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Cultural Etiquette</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Queuing is taken seriously. Stand on the right side of escalators. Cantonese is the local language, but English is widely spoken in tourist areas.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Getting Around</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                The MTR is the fastest way to navigate the city. Trams offer scenic routes through Central. Star Ferry provides iconic harbor crossings for minimal cost.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-black border-t border-purple-900/50">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12 text-zinc-400">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-white mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-white mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm hover:text-purple-400 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm hover:text-purple-400 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm hover:text-purple-400 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-white mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="inline text-zinc-500">Student:</dt>
+                            <dd class="inline ml-2 text-white">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="inline text-zinc-500">NUID:</dt>
+                            <dd class="inline ml-2 text-white">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="inline text-zinc-500">Course:</dt>
+                            <dd class="inline ml-2 text-white">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="inline text-zinc-500">Institution:</dt>
+                            <dd class="inline ml-2 text-white">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-purple-900/30 mt-12 pt-8">
+                <p class="text-xs text-zinc-600 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Content Wrapper -->
+
+    <!-- Audio Player Script -->
+    <script>
+        const bgmToggle = document.getElementById('bgm-toggle');
+        const audioPlayer = document.getElementById('hk-audio');
+        const recordIcon = document.getElementById('record-icon');
+        let isPlaying = false;
+
+        bgmToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                audioPlayer.pause();
+                recordIcon.style.animationPlayState = 'paused';
+                bgmToggle.classList.remove('bg-pink-600/80');
+                bgmToggle.classList.add('bg-purple-900/80');
+            } else {
+                audioPlayer.play();
+                recordIcon.style.animationPlayState = 'running';
+                bgmToggle.classList.remove('bg-purple-900/80');
+                bgmToggle.classList.add('bg-pink-600/80');
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+
+</body>
+</html>
