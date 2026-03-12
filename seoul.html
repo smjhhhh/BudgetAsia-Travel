@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Seoul - K-culture, historic palaces, and trendy neighborhoods in South Korea's captivating capital">
+    <title>Seoul - BudgetAsia Travel</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=1920&q=80"
+            alt="Seoul cityscape and Gyeongbokgung Palace"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                            <a href="hongkong.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Hong Kong</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
+            <div class="container mx-auto px-8 py-32">
+                <div class="max-w-4xl">
+                    <p class="text-sm text-blue-700 font-medium mb-4 uppercase tracking-wider">South Korea</p>
+                    <h1 class="text-6xl font-light text-zinc-900 mb-6 tracking-tight leading-tight">
+                        Seoul
+                    </h1>
+                    <p class="text-xl text-zinc-700 leading-relaxed mb-8 max-w-2xl">
+                        South Korea's captivating capital where K-pop culture thrives alongside ancient palaces, trendy cafes neighbor traditional hanok villages, and innovation meets tradition at every turn.
+                    </p>
+                    <a href="booking.html" class="inline-block bg-emerald-700 text-white px-8 py-3.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Plan Your Trip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight">Why Seoul?</h2>
+                <div class="space-y-4 text-zinc-700 leading-relaxed">
+                    <p>
+                        Seoul is a city that never sleeps, offering an intoxicating blend of ultra-modern skyscrapers, Buddhist temples, and royal palaces. The birthplace of K-pop and Korean Wave culture, Seoul has become a global trendsetter in music, fashion, beauty, and technology.
+                    </p>
+                    <p>
+                        Budget travelers will find Seoul surprisingly affordable, with excellent public transportation, countless free attractions, and affordable yet delicious street food. The city's safe environment, fast Wi-Fi everywhere, and friendly locals make it an ideal destination for first-time travelers to Asia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-16 tracking-tight text-center">Top Attractions</h2>
+
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Attraction 1 -->
+                    <article class="group">
+                        <div class="bg-blue-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&h=400&fit=crop" alt="Gyeongbokgung Palace Seoul" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Gyeongbokgung Palace</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            The largest of Five Grand Palaces, witness the changing of the guard ceremony at this stunning royal complex.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 2 -->
+                    <article class="group">
+                        <div class="bg-blue-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/2018_Bukchon_Hanok_village.jpg/1280px-2018_Bukchon_Hanok_village.jpg" alt="Bukchon Hanok Village Seoul" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Bukchon Hanok Village</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Wander through traditional Korean houses nestled between palaces, offering glimpse into historic Seoul.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 3 -->
+                    <article class="group">
+                        <div class="bg-blue-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579003593419-98f949b9398f?w=600&h=400&fit=crop" alt="Myeongdong Shopping Seoul" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Myeongdong Shopping</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Seoul's premier shopping district for Korean cosmetics, fashion, and street food in a vibrant atmosphere.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight text-center">Must-Try Korean Food</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Korean cuisine is bold, flavorful, and incredibly diverse. From sizzling barbecue to comforting stews, Seoul offers culinary adventures at every price point.
+                </p>
+
+                <div class="grid grid-cols-4 gap-6">
+
+                    <!-- Food Item 1 -->
+                    <article>
+                        <div class="bg-blue-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400&h=300&fit=crop" alt="Bibimbap" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Bibimbap</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Mixed rice bowl with vegetables, meat, egg, and gochujang sauce.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 2 -->
+                    <article>
+                        <div class="bg-blue-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=400&h=300&fit=crop" alt="Korean BBQ" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Korean BBQ</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Grilled marinated beef or pork, wrapped in lettuce with sauces and sides.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 3 -->
+                    <article>
+                        <div class="bg-blue-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?w=400&h=300&fit=crop" alt="Tteokbokki" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Tteokbokki</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Spicy stir-fried rice cakes in sweet and spicy gochujang sauce.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 4 -->
+                    <article>
+                        <div class="bg-blue-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Korean_stew-Kimchi_jjigae-01.jpg/1280px-Korean_stew-Kimchi_jjigae-01.jpg" alt="Kimchi Jjigae" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Kimchi Jjigae</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Hearty kimchi stew with tofu, pork, and vegetables in savory broth.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Day Itinerary Section -->
+        <section class="container mx-auto px-8 py-24 bg-blue-50/30">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-light text-zinc-900 mb-4 tracking-tight text-center">3-Day Seoul Itinerary</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Discover the dynamic energy of Seoul through historic palaces, trendy neighborhoods, and endless Korean BBQ with this 3-day adventure.
+                </p>
+
+                <!-- Day 1 -->
+                <article class="bg-white border border-blue-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-blue-200">
+                        <div class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 1: Royal Heritage & Traditional Villages</h3>
+                            <p class="text-sm text-zinc-500">Palaces, Hanok Villages & Temple Stays</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Gyeongbokgung Palace</p>
+                                    <p class="text-sm text-zinc-600">Visit the largest Joseon Dynasty palace with the royal guard changing ceremony at 10 AM. Explore the National Folk Museum inside the grounds.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Bukchon Hanok Village</p>
+                                    <p class="text-sm text-zinc-600">Wander through traditional Korean houses (hanok) on hillside alleys, with stunning views of modern Seoul juxtaposed against historic architecture.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Insadong Cultural Street & Jogyesa Temple</p>
+                                    <p class="text-sm text-zinc-600">Browse traditional tea houses, art galleries, and souvenir shops, then visit Seoul's main Buddhist temple illuminated at night.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Korean street toast (gilgeori toast) and coffee from a cart near Gyeongbokgung (~₩3,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Bibimbap at Gogung restaurant near the palace (~₩12,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Korean BBQ (samgyeopsal) in Insadong with side dishes (banchan) (~₩18,000)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 2 -->
+                <article class="bg-white border border-blue-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-blue-200">
+                        <div class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 2: Modern Seoul & K-Culture</h3>
+                            <p class="text-sm text-zinc-500">Shopping, K-Pop & Han River Vibes</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Myeongdong Shopping District</p>
+                                    <p class="text-sm text-zinc-600">Explore Korea's cosmetics paradise with K-beauty brands, street food vendors, and fashion boutiques. Try free samples everywhere!</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Gangnam District & COEX Mall</p>
+                                    <p class="text-zinc-600">Visit the "Gangnam Style" statue, explore Starfield Library inside COEX, and experience Seoul's modern luxury shopping scene.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Han River Park (Hangang Park)</p>
+                                    <p class="text-sm text-zinc-600">Rent bikes, enjoy riverside picnics with convenience store fried chicken and beer (chimaek), and watch the Banpo Bridge Rainbow Fountain show.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Egg bread (gyeran-bbang) and hotteok (sweet pancake) in Myeongdong (~₩4,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Korean fried chicken (yangnyeom chicken) at Kyochon in Gangnam (~₩20,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Convenience store picnic at Han River: kimbap, ramyeon, fried chicken (~₩15,000)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 3 -->
+                <article class="bg-white border border-blue-200 p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-blue-200">
+                        <div class="bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 3: Markets, Museums & Nightlife</h3>
+                            <p class="text-sm text-zinc-500">Local Markets, Art & Hongdae Clubs</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Gwangjang Market</p>
+                                    <p class="text-sm text-zinc-600">Experience Seoul's oldest traditional market famous for bindaetteok (mung bean pancakes), mayak kimbap, and vintage clothing stalls.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Ihwa Mural Village & Naksan Park</p>
+                                    <p class="text-sm text-zinc-600">Climb colorful staircases adorned with street art, enjoy panoramic city views from the historic fortress wall.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Hongdae (Hongik University Area)</p>
+                                    <p class="text-sm text-zinc-600">Explore Seoul's youth culture hub with live street performances, indie music clubs, quirky cafés, and vibrant nightlife until dawn.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Bindaetteok (mung bean pancake) and makgeolli at Gwangjang Market (~₩8,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Tteokbokki (spicy rice cakes) and twigim (fried snacks) from street vendors (~₩6,000)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Kimchi jjigae (kimchi stew) at a local restaurant in Hongdae, followed by bingsu dessert (~₩15,000)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Budget Summary -->
+                <div class="bg-emerald-50 border-l-4 border-emerald-700 p-6 mt-8">
+                    <h4 class="text-sm font-medium text-emerald-900 uppercase tracking-wider mb-3">3-Day Budget Estimate</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div>
+                            <p class="text-emerald-700 font-medium">Accommodation</p>
+                            <p class="text-emerald-900">~₩50,000/night</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Food</p>
+                            <p class="text-emerald-900">~₩35,000/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Transportation</p>
+                            <p class="text-emerald-900">~₩10,000/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Attractions</p>
+                            <p class="text-emerald-900">~₩20,000 total</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-emerald-800 mt-4"><strong>Total 3-Day Budget:</strong> Approximately ₩305,000 (~$230 USD) per person</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-blue-50/50 backdrop-blur-sm">
+            <div class="container mx-auto px-8 py-24">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-light text-zinc-900 mb-12 tracking-tight">Travel Tips</h2>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Best Time to Visit</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Spring (April-May) for cherry blossoms or autumn (September-November) for comfortable weather and fall colors. Avoid summer humidity and winter cold.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Budget Tips</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Many palaces offer free admission in traditional hanbok dress. Convenience stores have affordable meals. Use T-money card for discounted public transit.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Cultural Etiquette</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Remove shoes before entering homes. Use both hands when giving or receiving. Respect hierarchical social structure. Tipping is not customary.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Getting Around</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                The subway system is modern, efficient, and affordable. Get a T-money card at any convenience store. Kakao Map app is essential for navigation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white/95 backdrop-blur-sm border-t border-gray-200">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-zinc-900 mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm text-zinc-600 leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="text-zinc-500 inline">Student:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">NUID:</dt>
+                            <dd class="text-zinc-900 inline ml-2">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Course:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Institution:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-xs text-zinc-500 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</body>
+</html>

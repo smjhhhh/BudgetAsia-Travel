@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Bangkok - Experience bustling markets, golden temples, and vibrant street food culture">
+    <title>Bangkok - BudgetAsia Travel</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1920&q=80"
+            alt="Bangkok cityscape"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/90"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10">
+
+    <!-- Global Navigation Bar -->
+    <header class="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/80">
+        <nav class="container mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-light tracking-tight text-zinc-900 hover:text-emerald-700 transition-colors duration-200">
+                    BudgetAsia
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex items-center space-x-10">
+                    <li><a href="index.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+
+                    <!-- Destinations Dropdown -->
+                    <li class="relative group">
+                        <button class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 flex items-center gap-1">
+                            Destinations
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="bangkok.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Bangkok</a>
+                            <a href="tokyo.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Tokyo</a>
+                            <a href="seoul.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Seoul</a>
+                            <a href="hongkong.html" class="block px-4 py-3 text-sm text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Hong Kong</a>
+                        </div>
+                    </li>
+
+                    <li><a href="packages.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Packages
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="reviews.html" class="text-sm text-zinc-700 hover:text-emerald-700 transition-colors duration-200 relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-700 group-hover:w-full transition-all duration-300"></span>
+                    </a></li>
+                    <li><a href="booking.html" class="bg-emerald-700 text-white px-6 py-2.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Book Now
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
+            <div class="container mx-auto px-8 py-32">
+                <div class="max-w-4xl">
+                    <p class="text-sm text-amber-700 font-medium mb-4 uppercase tracking-wider">Thailand</p>
+                    <h1 class="text-6xl font-light text-zinc-900 mb-6 tracking-tight leading-tight">
+                        Bangkok
+                    </h1>
+                    <p class="text-xl text-zinc-700 leading-relaxed mb-8 max-w-2xl">
+                        Experience the vibrant chaos of Thailand's capital, where ancient temples meet modern skyscrapers, and street food vendors serve up culinary masterpieces.
+                    </p>
+                    <a href="booking.html" class="inline-block bg-emerald-700 text-white px-8 py-3.5 text-sm font-medium hover:bg-emerald-800 transition-colors duration-200">
+                        Plan Your Trip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight">Why Bangkok?</h2>
+                <div class="space-y-4 text-zinc-700 leading-relaxed">
+                    <p>
+                        Bangkok is a city of contrasts, where centuries-old temples stand alongside gleaming shopping malls, and tuk-tuks navigate bustling streets filled with street food vendors. The city's energy is infectious, offering budget travelers an unforgettable experience without breaking the bank.
+                    </p>
+                    <p>
+                        From the ornate Grand Palace to the floating markets of Damnoen Saduak, Bangkok offers a perfect blend of cultural immersion and modern convenience. The city's affordable accommodation, world-famous street food, and excellent public transportation make it an ideal destination for budget-conscious travelers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-16 tracking-tight text-center">Top Attractions</h2>
+
+                <div class="grid grid-cols-3 gap-8">
+
+                    <!-- Attraction 1 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=600&h=400&fit=crop" alt="Grand Palace Bangkok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Grand Palace</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Marvel at the intricate architecture and sacred Emerald Buddha at this iconic royal residence.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 2 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&h=400&fit=crop" alt="Chatuchak Market Bangkok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Chatuchak Market</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Explore one of the world's largest weekend markets with over 15,000 stalls selling everything imaginable.
+                        </p>
+                    </article>
+
+                    <!-- Attraction 3 -->
+                    <article class="group">
+                        <div class="bg-amber-100 h-64 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&h=400&fit=crop" alt="Wat Arun Temple Bangkok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-light text-zinc-900 mb-2">Wat Arun</h3>
+                        <p class="text-sm text-zinc-600 leading-relaxed">
+                            Visit the stunning Temple of Dawn, famous for its towering spire decorated with colorful porcelain.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="container mx-auto px-8 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-zinc-900 mb-6 tracking-tight text-center">Must-Try Street Food</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Bangkok's street food scene is legendary. From bustling night markets to roadside stalls, discover authentic flavors at unbeatable prices.
+                </p>
+
+                <div class="grid grid-cols-4 gap-6">
+
+                    <!-- Food Item 1 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400&h=300&fit=crop" alt="Pad Thai" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Pad Thai</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Stir-fried rice noodles with eggs, tofu, and tamarind sauce.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 2 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&h=300&fit=crop" alt="Som Tam papaya salad" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Som Tam</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Spicy green papaya salad with peanuts and lime.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 3 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mango_Sticky_Rice_%289152382652%29.jpg/960px-Mango_Sticky_Rice_%289152382652%29.jpg" alt="Mango Sticky Rice" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Mango Sticky Rice</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Sweet coconut sticky rice topped with fresh mango.
+                        </p>
+                    </article>
+
+                    <!-- Food Item 4 -->
+                    <article>
+                        <div class="bg-orange-100 h-48 mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&h=300&fit=crop" alt="Tom Yum Goong soup" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-lg font-light text-zinc-900 mb-2">Tom Yum Goong</h3>
+                        <p class="text-xs text-zinc-600 leading-relaxed">
+                            Hot and sour soup with shrimp, lemongrass, and galangal.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Day Itinerary Section -->
+        <section class="container mx-auto px-8 py-24 bg-amber-50/30">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-light text-zinc-900 mb-4 tracking-tight text-center">3-Day Bangkok Itinerary</h2>
+                <p class="text-zinc-600 text-center mb-16 max-w-2xl mx-auto">
+                    Experience the best of Bangkok with this carefully curated 3-day journey through temples, markets, and culinary adventures.
+                </p>
+
+                <!-- Day 1 -->
+                <article class="bg-white border border-amber-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-amber-200">
+                        <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 1: Royal Heritage & River Life</h3>
+                            <p class="text-sm text-zinc-500">Temples, Palaces & Floating Markets</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Grand Palace & Wat Phra Kaew</p>
+                                    <p class="text-sm text-zinc-600">Explore Thailand's most sacred temple complex and marvel at the Emerald Buddha. Arrive early (8 AM) to beat the crowds.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Wat Pho (Temple of the Reclining Buddha)</p>
+                                    <p class="text-sm text-zinc-600">See the 46-meter gold-plated Buddha and experience a traditional Thai massage at the temple's massage school.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Chao Phraya River Cruise</p>
+                                    <p class="text-sm text-zinc-600">Take a sunset boat ride to see Wat Arun (Temple of Dawn) illuminated against the evening sky.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Jok (rice porridge) from street vendors near Grand Palace (~50 THB)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Pad Thai at Thip Samai, the legendary Pad Thai restaurant (~100 THB)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Riverside seafood at Tha Maharaj pier with views of Wat Arun (~300 THB)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 2 -->
+                <article class="bg-white border border-amber-200 p-8 mb-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-amber-200">
+                        <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 2: Markets & Modern Bangkok</h3>
+                            <p class="text-sm text-zinc-500">Shopping, Street Food & Sky-High Views</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Damnoen Saduak Floating Market</p>
+                                    <p class="text-sm text-zinc-600">Experience the iconic floating market (depart 6 AM, 1.5-hour drive). Buy fresh fruits and local snacks from boats.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Chatuchak Weekend Market</p>
+                                    <p class="text-zinc-600">Browse 15,000 stalls selling everything from vintage clothes to handmade crafts (weekends only).</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Mahanakhon SkyWalk</p>
+                                    <p class="text-sm text-zinc-600">Watch sunset from Thailand's highest observation deck with 360° views of Bangkok's skyline.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Coconut pancakes (Khanom Krok) at floating market (~30 THB)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Som Tam (papaya salad) and grilled chicken at Chatuchak food section (~120 THB)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Tom Yum Goong at Pee Aor Tom Yum Kung Noodle in Chinatown (~150 THB)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Day 3 -->
+                <article class="bg-white border border-amber-200 p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-amber-200">
+                        <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-medium">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-light text-zinc-900">Day 3: Local Life & Night Markets</h3>
+                            <p class="text-sm text-zinc-500">Neighborhoods, Art & Street Food Paradise</p>
+                        </div>
+                    </div>
+
+                    <!-- Landmarks -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-emerald-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Landmarks
+                        </h4>
+                        <ul class="space-y-3 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Morning:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Jim Thompson House</p>
+                                    <p class="text-sm text-zinc-600">Tour the traditional Thai teak house of the American silk entrepreneur, surrounded by lush gardens.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Afternoon:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Bangkok Art & Culture Centre</p>
+                                    <p class="text-sm text-zinc-600">Explore contemporary Thai art exhibitions (free admission), then walk through trendy MBK shopping mall.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-700 font-medium text-sm mt-0.5">Evening:</span>
+                                <div>
+                                    <p class="text-zinc-900 font-medium">Rot Fai Night Market (Train Market)</p>
+                                    <p class="text-sm text-zinc-600">Experience Bangkok's hippest night market with vintage goods, live music, and incredible street food.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Food -->
+                    <div>
+                        <h4 class="text-sm font-medium text-orange-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Food
+                        </h4>
+                        <ul class="space-y-2 ml-7">
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Breakfast:</span>
+                                <p class="text-zinc-700">Khao Tom (rice soup) at local café near Jim Thompson House (~60 THB)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Lunch:</span>
+                                <p class="text-zinc-700">Boat noodles (Kuay Teow Reua) at Victory Monument boat noodle alley (~40 THB per bowl)</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-700 font-medium text-sm">Dinner:</span>
+                                <p class="text-zinc-700">Street food feast at Rot Fai Market: grilled skewers, mango sticky rice, Thai iced tea (~200 THB)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Budget Summary -->
+                <div class="bg-emerald-50 border-l-4 border-emerald-700 p-6 mt-8">
+                    <h4 class="text-sm font-medium text-emerald-900 uppercase tracking-wider mb-3">3-Day Budget Estimate</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div>
+                            <p class="text-emerald-700 font-medium">Accommodation</p>
+                            <p class="text-emerald-900">~1,500 THB/night</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Food</p>
+                            <p class="text-emerald-900">~500 THB/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Transportation</p>
+                            <p class="text-emerald-900">~300 THB/day</p>
+                        </div>
+                        <div>
+                            <p class="text-emerald-700 font-medium">Attractions</p>
+                            <p class="text-emerald-900">~800 THB total</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-emerald-800 mt-4"><strong>Total 3-Day Budget:</strong> Approximately 7,900 THB (~$220 USD) per person</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-amber-50/50 backdrop-blur-sm">
+            <div class="container mx-auto px-8 py-24">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-light text-zinc-900 mb-12 tracking-tight">Travel Tips</h2>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Best Time to Visit</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                November to February offers the most pleasant weather with cooler temperatures and less humidity. Avoid the hot season (March-May) if possible.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Budget Tips</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Street food is delicious and incredibly affordable. Use the BTS Skytrain and MRT for efficient, budget-friendly transportation around the city.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Cultural Etiquette</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Dress modestly when visiting temples. Remove shoes before entering homes and sacred spaces. The Royal Family is deeply respected.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-medium text-emerald-700 mb-3 uppercase tracking-wider">Getting Around</h3>
+                            <p class="text-sm text-zinc-700 leading-relaxed">
+                                Download the Grab app for safe, affordable rides. The BTS and MRT are clean, air-conditioned, and cover most tourist areas efficiently.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-white/95 backdrop-blur-sm border-t border-gray-200">
+        <div class="container mx-auto px-8 py-16">
+            <div class="grid grid-cols-12 gap-12">
+
+                <!-- About Section -->
+                <div class="col-span-5">
+                    <h3 class="text-xl font-light text-zinc-900 mb-4 tracking-tight">BudgetAsia</h3>
+                    <p class="text-sm text-zinc-600 leading-relaxed max-w-md">
+                        Your gateway to affordable adventures across Asia. Discover Bangkok, Tokyo, Seoul and beyond with carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-span-3">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Travel Packages</a></li>
+                        <li><a href="booking.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Book Now</a></li>
+                        <li><a href="reviews.html" class="text-sm text-zinc-600 hover:text-emerald-700 transition-colors duration-200">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Information -->
+                <div class="col-span-4">
+                    <h3 class="text-sm font-medium text-zinc-900 mb-4 uppercase tracking-wider">Project Information</h3>
+                    <dl class="space-y-2 text-sm">
+                        <div>
+                            <dt class="text-zinc-500 inline">Student:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Mingjie Shen</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">NUID:</dt>
+                            <dd class="text-zinc-900 inline ml-2">002565553</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Course:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Web Design</dd>
+                        </div>
+                        <div>
+                            <dt class="text-zinc-500 inline">Institution:</dt>
+                            <dd class="text-zinc-900 inline ml-2">Northeastern University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-xs text-zinc-500 text-center">
+                    &copy; 2026 BudgetAsia Travel. Academic Project for Educational Purposes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- End Content Wrapper -->
+
+</body>
+</html>
